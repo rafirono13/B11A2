@@ -171,9 +171,137 @@
 /* banner section end */
 /* header section end */
 
+/* ------------------------------------------------- */
+/* Main section */
+    main{
+        max-width: 1440px;
+        margin: 0 auto;
+        background-image: url('assets/bg.png');
+    }
+/* Main section part one */
+    .standards{
+        width: 1160px;
+        margin: 0 auto;
+    }
+/* style section */
+    .curriculum-title{
+        font-size: var(--big-font);
+        color: var(--black-color);
+        margin: 60px 0 80px 0;
+        text-align: center;
+    }
+    /* card section */
+
+    .curr-cards{
+        padding: 52px 40px 58px 40px;
+        border-radius: 18px;
+        box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+        text-align: center;
+
+        h4{
+            font-size: 1.5rem;
+            color: var(--black-color);
+            font-weight: bold;
+            margin: 32px 0;
+        }
+
+        p{
+            font-size: var(--root-font-size);
+            color: #808080;
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+
+        .curr-card-btn{
+            border-style: none;
+            background: none;
+            cursor: pointer;
+
+            a{
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+    /* card background colors */
+    .curr-card-container .curr-cards:nth-child(1){
+        border: 1px solid rgb(222, 245, 255);
+        background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    }
+    .curr-card-container .curr-cards:nth-child(2){
+        border: 0.94px solid rgb(255, 244, 220);
+        background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    }
+    .curr-card-container .curr-cards:nth-child(3){
+        border: 0.94px solid rgb(242, 232, 255);
+        background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    }
+    /* card button colors */
+    .curr-cards:nth-child(1) .curr-card-btn a{
+        color: var(--blue-color);
+    }
+    .curr-cards:nth-child(2) .curr-card-btn a{
+        color: var(--orange-color);
+    }
+    .curr-cards:nth-child(3) .curr-card-btn a{
+        color: var(--purple-color);
+    }
+    
+    /* navigation button section */
+
+    .chevron-buttons{
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 60px;
+        
+        button{
+            background-color: var(--orange-color);
+            color: var(--white-color);
+            border-style: none;
+            padding: 19px 22px;
+            font-size: 1.25rem;
+            border-radius: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+            width: 60px;
+        }
+    }
+/* style section end */
+
+.curr-card-container{
+    display: flex;
+    gap: 28px;
+}
+
+
+/* main section part one end */
+/* main section end */
+/* --------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive header section */
-
 @media screen and (max-width:576px) {
 /* navbar section */
 
@@ -187,7 +315,7 @@
     width: 100%;
     padding: 15px 20px;
     position: relative;
-    border: 1px solid #FEA301;
+    border-bottom: 1px solid #fea10188;
 }
 
     .nav-links{
@@ -215,8 +343,6 @@
         width: 90%;
         padding: 0;
         margin: 0 auto;
-        /* justify-content: center;
-        align-items: center; */
     }
 
     .banner-info{
@@ -236,6 +362,60 @@
         text-align: center;
     }
 }
-
-
 /* responsive header section end */
+
+/* ------------------------------------------- */
+
+/* main section responsive */
+
+@media screen and (max-width: 576px) {
+    main {
+      max-width: 100%;
+      overflow-x: hidden; 
+    }
+  }
+/* main section part-1 */
+@media screen and (max-width: 576px) {
+    .standards{
+        flex-direction: column;
+        text-align: center;
+        width:100%;
+    }
+
+    /* .curr-card-container {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        gap: 20px;
+      }
+
+      .curr-cards {
+        width: 80%;
+        margin: 0 auto;
+      }   */
+
+
+    .curr-card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .curr-cards {
+        width: 85%;  
+        padding: 40px 10px;  /* Adjusted padding */
+        margin: 0 auto;
+    }
+
+    .curriculum-title {
+        font-size: 2rem; 
+        margin: 40px 0;
+    }
+
+    .chevron-buttons{
+        display: none;
+    }
+}
+
+/* main section part-2 */
+/* main section responsive end */

@@ -118,23 +118,19 @@
     
     /* Modify mobile styles in media query */
     @media screen and (max-width: 576px) {
-        /* Container adjustments */
+
         .section-card-container {
-          width: 390px;
-          gap: 20px; 
+          max-width: 460px;
+          grid-template-columns: 1fr;
+          margin: 0 6px;
+          /* align-items: center;
+          justify-content: center; */
         }
-    
-        .section-card-container {
-            width: 100%;
-            grid-template-columns: 1fr;
-            align-items: center;
-            justify-content: center;
-          }
         
-          .section-card-two {
+
+        .section-card-two {
             grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            width: 100%;
+            width: 90%;
           }
       
         .small-cards {
@@ -164,7 +160,8 @@
       
      
         .small-cards img {
-          object-fit: cover;
+            width: 100%;
+            object-fit: cover;
         }
       
         
@@ -180,14 +177,15 @@
     .footer-content{
         flex-direction: column;
         margin: 0px auto;
+    }
 
-        .kids p{
-            margin-bottom: 35px;
-        }
-        .footer-social, .kids, .footer-list{
-            margin-top: 35px;
-            padding-left: 20px;
-        }
+
+    .kids p{
+        margin-bottom: 35px;
+    }
+    .footer-social, .kids, .footer-list{
+        margin-top: 35px;
+        padding-left: 20px;
     }
 }
        

@@ -324,9 +324,11 @@
 
 .section-card-container{
     display: grid;
-    grid-template-columns: 50% repeat(2, 1fr);
+    grid-template-columns: 540px 1fr;
     width: 1160px;
     margin: 0 auto;
+    gap: 20px;
+    align-items: start;
 }
 
 .large-card {
@@ -492,7 +494,7 @@
     padding: 120px 0px;
 }
 
-.nav-logo{
+.bag-logo{
     display: flex;
     cursor: pointer;
 }

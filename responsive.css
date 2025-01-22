@@ -172,3 +172,22 @@
           display: none !important;
         }
       }
+
+
+/* footer style */
+
+@media screen and (max-width:576px) {
+    .footer-content{
+        flex-direction: column;
+        margin: 0px auto;
+
+        .kids p{
+            margin-bottom: 35px;
+        }
+        .footer-social, .kids, .footer-list{
+            margin-top: 35px;
+            padding-left: 20px;
+        }
+    }
+}
+       

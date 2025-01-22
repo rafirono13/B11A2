@@ -59,7 +59,7 @@
             text-align: center;
         }
 
-        marquee{
+        .marquee-container{
             display: none;
         }
     }

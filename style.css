@@ -543,13 +543,32 @@
 
 /* footer section end */
 
-marquee{
+
+/* marquee section start */
+
+
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
     background-color: #01adfd2b;
-    text-align: center;
-}
-
-
-
+    padding: 8px 0;
+  }
+  
+  .marquee-content {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+    padding-right: 100%; /* Start off-screen to the left */
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(-100%); /* Start position left */
+    }
+    100% {
+      transform: translateX(100%); /* End position right */
+    }
+  }
+/* marquee section end */
 
 
 

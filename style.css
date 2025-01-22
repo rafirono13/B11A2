@@ -542,7 +542,10 @@
 
 /* footer section end */
 
-
+marquee{
+    background-color: #01adfd2b;
+    text-align: center;
+}
 
 
 

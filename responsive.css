@@ -58,6 +58,10 @@
             margin: 0 auto;
             text-align: center;
         }
+
+        marquee{
+            display: none;
+        }
     }
     /* responsive header section end */
     

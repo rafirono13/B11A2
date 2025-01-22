@@ -53,6 +53,7 @@
         font-size: var(--medium-font);
         font-weight: bold;
         color: var(--black-color);
+        cursor: pointer;
     }
 }
 
@@ -282,17 +283,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* main section part one end */
 /* ------------------------------- */
 
@@ -303,7 +293,7 @@
 
 .our-stories {
     position: relative;
-    margin: 80px 0;
+    margin: 80px 0 0 0;
     padding: 80px 0;
     background-image: url(assets/bg.png);
 }
@@ -487,7 +477,68 @@
 /* main section end */
 /* --------------------------------------------------- */
 
+/* footer section */
 
+.footer{
+    background-color: #01ACFD;
+}
+
+
+.footer-content{
+    display: flex;
+    max-width:1100px;
+    margin: 0px auto;
+    justify-content: space-between;
+    padding: 120px 0px;
+}
+
+.nav-logo{
+    display: flex;
+    cursor: pointer;
+}
+
+.kids{
+    max-width: 400px;
+
+    h3{
+        font-size:2.5rem;
+        line-height: 0.9;
+        color: white;
+    }
+
+    p{
+        margin-top: 35px;
+        font-size: 1.25rem;
+        color: var(--white-color);
+    }
+}
+
+.footer-list li{
+    list-style: none;
+    color: var(--white-color);
+    font-size: var(--small-font);
+    font-weight: 500;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.footer-list li:nth-child(1){
+    font-size: 1.5rem;
+}
+
+.End-title{
+    font-size: 1.625rem;
+    margin-bottom: 32px;
+    color: var(--white-color);
+}
+
+.footer-social a{
+    margin-right: 10px;
+    text-decoration: none;
+    border: none;
+}
+
+/* footer section end */
 
 
 

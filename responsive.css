@@ -127,14 +127,13 @@
           max-width: 460px;
           grid-template-columns: 1fr;
           margin: 0 6px;
-          /* align-items: center;
-          justify-content: center; */
+          
         }
         
 
         .section-card-two {
             grid-template-columns: repeat(2, 1fr);
-            width: 90%;
+            width: 100%;
           }
       
         .small-cards {

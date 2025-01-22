@@ -99,6 +99,7 @@
     font-size: 30px;
     cursor: pointer;
 }
+
 /* style section end */
 .nav-brand{
     display: flex;
@@ -325,7 +326,7 @@
 .section-card-container{
     display: grid;
     grid-template-columns: 540px 1fr;
-    width: 1160px;
+    max-width: 1160px;
     margin: 0 auto;
     gap: 20px;
     align-items: start;
